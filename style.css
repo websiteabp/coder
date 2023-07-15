@@ -1,0 +1,210 @@
+* {
+    font-family: "Montserrat";
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0 0 16px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+p {
+    color: #979797;
+    margin: 0 0 16px 0;
+    font-size: 24px;
+}
+
+section {
+    padding: 64px 128px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 128px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 5;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+.btn {
+    background-color: #0099FF;
+    color: white;
+    padding: 8px 24px;
+}
+
+.btn-alt {
+    background-color: white;
+    color: black;
+    margin-right: 16px;
+    border: 2px solid #0099FF;
+}
+
+#landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+}
+
+#landing p {
+    margin-bottom: 32px;
+}
+
+#landing > div {
+    width: 50%;
+}
+
+nav > a {
+    margin-left: 12px;
+}
+
+nav > a:hover {
+    color: #0099FF;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+#about > div {
+    width: 50%;
+}
+
+#about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 75px;
+    margin-top: 72px;
+}
+
+.card {
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 25px black;
+    transform: scale(1.2);
+}
+
+.contact-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    column-gap: 120px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+    grid-template-areas:    "name subject"
+                            "email number"
+                            "message message";
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+#input-name {
+    grid-area: name;
+}
+
+#input-subject {
+    grid-area: subject;
+}
+
+#input-email {
+    grid-area: email;
+}
+
+#input-number {
+    grid-area: number;
+}
+
+#input-message {
+    grid-area: message;
+}
+
+.input-group label {
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 21px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #333;
+    font-size: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #0099FF;
+    padding: 30px 20px;
+}
+
+form button {
+    border: none;
+}
+
+form h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+footer {
+    padding: 16px 128px;
+    background-color: #0099FF;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    width: 50%;
+}
+
+.social-icon {
+    display: flex;
+    gap: 32px;
+}
